@@ -1,51 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>ㄠˋㄠˋ無限公司</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <img src="assets/logo.png" alt="Logo" class="logo"/>
     <h1>ㄠˋㄠˋ無限公司</h1>
     <p>由無尾熊創辦的療癒旅遊與遊樂園體驗</p>
+    <a href="projects.html" class="btn">📦 專案分享</a>
   </header>
   <main>
     <section class="intro">
       <h2>探索可愛又放鬆的旅程</h2>
       <p>我們的無尾熊導遊將帶你穿越油加利樹林，體驗前所未有的放鬆旅程。</p>
     </section>
-    <section class="qr">
-      <h2>掃描開啟本站</h2>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://aao-beta.vercel.app/" alt="QR Code" class="qrcode"/>
-    </section>
   </main>
   <footer>
     <p>© 2025 ㄠˋㄠˋ無限公司 All rights reserved.</p>
   </footer>
-
-  <!-- 無尾熊導遊 -->
-  <div class="koala-guide">
-    <img src="assets/koala.png" alt="無尾熊導遊" onclick="toggleSpeech()" />
-    <div id="speechBubble" class="speech hidden">歡迎來到ㄠˋㄠˋ無限公司！</div>
-  </div>
-
-  <script>
-    const messages = [
-      "歡迎來到ㄠˋㄠˋ無限公司！",
-      "今天想去哪裡玩呢？",
-      "記得帶相機拍可愛照哦！",
-      "來看看我們的旅遊行程～"
-    ];
-    let index = 0;
-    function toggleSpeech() {
-      const bubble = document.getElementById('speechBubble');
-      bubble.textContent = messages[index];
-      bubble.classList.remove('hidden');
-      index = (index + 1) % messages.length;
-    }
-  </script>
 </body>
 </html>
