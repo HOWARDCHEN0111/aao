@@ -1,69 +1,52 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #fff4f8 url('https://raw.githubusercontent.com/OpenAI-UX/gpt-assets/main/eucalyptus-soft-bg.jpg') no-repeat center top;
-  background-size: cover;
+  margin: 0;
+  background-color: #fff4f8;
   text-align: center;
 }
 header {
   padding: 2em 1em;
   background-color: #ffe0ebaa;
-  border-bottom: 3px dotted #f7a8b8;
 }
 .logo {
-  width: 120px;
-  height: auto;
+  width: 100px;
   border-radius: 50%;
 }
 h1 {
-  font-size: 2.5em;
-  margin: 0.2em 0;
   color: #d17c96;
 }
-header p {
-  font-size: 1.1em;
-  color: #555;
+p {
+  color: #444;
 }
-.intro {
+.btn {
+  display: inline-block;
+  margin: 1em;
+  padding: 0.6em 1.2em;
+  background-color: #f7a8b8;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 2em 1em;
 }
-.intro h2 {
-  color: #d17c96;
+.project-card {
+  width: 300px;
+  margin: 1em;
+  background: white;
+  border-radius: 12px;
+  padding: 1em;
+  box-shadow: 0 4px 12px #eac6d6;
 }
-.qr img.qrcode {
-  width: 150px;
-  margin-top: 1em;
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 footer {
-  background-color: #ffe0ebaa;
   padding: 1em;
   font-size: 0.9em;
   color: #666;
-  margin-top: 3em;
-}
-
-/* 🐨 無尾熊導遊樣式 */
-.koala-guide {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  text-align: right;
-}
-.koala-guide img {
-  width: 100px;
-  cursor: pointer;
-}
-.speech {
-  background-color: #fff8fc;
-  border: 2px solid #f4a8b8;
-  border-radius: 12px;
-  padding: 10px;
-  max-width: 200px;
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #333;
-  display: inline-block;
-}
-.hidden {
-  display: none;
 }
