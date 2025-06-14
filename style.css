@@ -77,3 +77,11 @@ footer {
 .hidden {
   display: none;
 }
+.sign-container {
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+.sign {
+  width: 280px;
+  max-width: 90%;
+}
