@@ -30,22 +30,22 @@
     <div id="speechBubble" class="speech hidden">歡迎來到ㄠˋㄠˋ無限公司！</div>
   </div>
 
- <script>
-  const messages = [
-    "歡迎來到ㄠˋㄠˋ無限公司！",
-    "今天想去哪裡玩呢？",
-    "點上方按鈕可以看東京專案唷～",
-    "我是你的小導遊 🐨",
-    "記得保持微笑享受旅程🌸",
-    "今天是6月15號 是我的小主人生日！六六主人生日快樂！🎂🎉"
-  ];
-  let index = 0;
-  function toggleSpeech() {
-    const bubble = document.getElementById('speechBubble');
-    bubble.textContent = messages[index];
-    bubble.classList.remove('hidden');
-    index = (index + 1) % messages.length;
-  }
-</script>
+  <script>
+    const messages = [
+      "歡迎來到ㄠˋㄠˋ無限公司！",
+      "今天想去哪裡玩呢？",
+      "點上方按鈕可以看東京專案唷～",
+      "我是你的小導遊 🐨",
+      "記得保持微笑享受旅程🌸",
+      "今天是6月15號 是我的小主人生日！六六主人生日快樂！🎂🎉"
+    ];
+    let index = 0;
+    function toggleSpeech() {
+      const bubble = document.getElementById('speechBubble');
+      bubble.textContent = messages[index];
+      bubble.classList.remove('hidden');
+      index = (index + 1) % messages.length;
+    }
+  </script>
 </body>
 </html>
