@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-background: #fff4f8 url('https://raw.githubusercontent.com/OpenAI-UX/gpt-assets/main/eucalyptus-soft-bg.jpg') no-repeat center top;
+  background: #fff4f8 url('https://raw.githubusercontent.com/OpenAI-UX/gpt-assets/main/eucalyptus-soft-bg.jpg') no-repeat center top;
   background-size: cover;
   text-align: center;
 }
@@ -40,4 +40,30 @@ footer {
   font-size: 0.9em;
   color: #666;
   margin-top: 3em;
+}
+
+/* 🐨 無尾熊導遊樣式 */
+.koala-guide {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-align: right;
+}
+.koala-guide img {
+  width: 100px;
+  cursor: pointer;
+}
+.speech {
+  background-color: #fff8fc;
+  border: 2px solid #f4a8b8;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 200px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+}
+.hidden {
+  display: none;
 }
