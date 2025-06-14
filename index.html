@@ -25,5 +25,27 @@
   <footer>
     <p>© 2025 ㄠˋㄠˋ無限公司 All rights reserved.</p>
   </footer>
+
+  <!-- 無尾熊導遊 -->
+  <div class="koala-guide">
+    <img src="assets/koala.png" alt="無尾熊導遊" onclick="toggleSpeech()" />
+    <div id="speechBubble" class="speech hidden">歡迎來到ㄠˋㄠˋ無限公司！</div>
+  </div>
+
+  <script>
+    const messages = [
+      "歡迎來到ㄠˋㄠˋ無限公司！",
+      "今天想去哪裡玩呢？",
+      "記得帶相機拍可愛照哦！",
+      "來看看我們的旅遊行程～"
+    ];
+    let index = 0;
+    function toggleSpeech() {
+      const bubble = document.getElementById('speechBubble');
+      bubble.textContent = messages[index];
+      bubble.classList.remove('hidden');
+      index = (index + 1) % messages.length;
+    }
+  </script>
 </body>
 </html>
